@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.ant-modal-close {
+    display: none;
+}
+
+.ant-modal-content {
+    padding: 0 !important;
+}
+
+.ant-btn {
+    display: none;
+}
