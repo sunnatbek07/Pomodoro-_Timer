@@ -21,3 +21,7 @@
 .ant-btn {
     display: none;
 }
+
+.switch:checked {
+    background: #1677FF !important;
+}
