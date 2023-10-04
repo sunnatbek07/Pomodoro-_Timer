@@ -24,16 +24,16 @@ const Main = () => {
     setIsModalOpen(false);
   };
 
-  const [darkMode, setDarkMode] = useState(
+
+  const [darkMode, setDarkMode] = useState<boolean>(
     localStorage.getItem("darkMode") === "true" || false
   );
 
-  const toggleDarkMode = () => {
+  const toggleDarkMode = (): void => {
     const newDarkMode = !darkMode;
     setDarkMode(newDarkMode);
-    localStorage.setItem("darkMode", newDarkMode);
+    localStorage.setItem("darkMode", newDarkMode.toString());
   };
-
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
